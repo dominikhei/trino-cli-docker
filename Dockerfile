@@ -18,6 +18,7 @@ RUN chmod +x trino
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV PATH $JAVA_HOME/bin:$PATH
+ENV PATH=$PATH:/app/
 
 CMD [ "sh", "-c", "\
     if test -v CONNECTION_USER && test -v CONNECTION_PW; then \

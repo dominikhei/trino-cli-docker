@@ -52,7 +52,7 @@ docker run --network=<network_name, f.e host> -e CONNECTION_URI=<uri to connect 
 To access the CLI you simply have to exec into the container, like the following:
 
 ```bash
-docker exec -it <container_name> ./trino
+docker exec -it <container_name> trino
 ```
 
 ### Trino CLI Commands
